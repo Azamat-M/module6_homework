@@ -1,7 +1,7 @@
 console.log('6.2')
 
 function inNumSimple(num) {
-    if (num > 1000) return 'данные неверны'
+    if (num > 1000 || num < 2) return 'данные неверны'
 
     let flag = `Число ${num} простое`;
     for (let i = 2; i < num; i++) {
@@ -14,4 +14,4 @@ function inNumSimple(num) {
     return flag
 }
 
-console.log(inNumSimple(654))
+console.log(inNumSimple(2))
